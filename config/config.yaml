@@ -1,0 +1,43 @@
+#config/config.yaml
+
+#Environment-specific settings for your application
+
+#default_env: qa
+#
+#qa:
+#  base_url: "url"
+#  browser: "chrome"
+#
+#dev:
+#  base_url: "url"
+#  browser: "chrome"
+#
+#prod:
+#  base_url: "url"
+#  browser: "chrome"
+
+browser : "chrome"
+environments:
+  sauce_demo:
+    base_url: "https://www.saucedemo.com/"
+    browser : "chrome" #"firefox"
+
+  practice_test_automation:
+    base_url: "https://practicetestautomation.com/"
+    browser : "chrome"
+    valid_username: "student"
+    valid_password: "Password123"
+    invalid_username: "incorrectUser"
+    invalid_password: "incorrectPassword"
+
+  orange_hrm:
+    base_url: "https://opensource-demo.orangehrmlive.com/"
+    browser :
+      - chrome
+      - firefox
+      - edge
+    username: "Admin"
+    password: "admin123"
+
+
+
